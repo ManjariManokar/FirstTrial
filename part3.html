@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+<head>
+<title>Dating Website</title>
+<style>
+.one{background:lightyellow;border:10px solid yellow;margin-bottom:10px;width:720px}
+input:hover{font-size:40px}
+label:hover{font-size:40px}
+.eight{
+	width:180px;
+  display: inline-block;
+  text-align: right;
+  vertical-align:top;
+  .ten:hover{font-size:40px}
+}​
+
+
+.three{width:auto}
+.four{text-align:center;background:red}
+.five{text-align:center;background:purple}
+.six{width:360px;height:50px}
+.seven{width:30%;height:30%}
+</style>
+</head>
+<body>
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<fieldset class="one">
+<legend>Your Face</legend>
+<label for="img" class="eight">Your image:</label>
+<input type="file" id="img" name="img" required> <br>
+<label for="img" class="eight">Image Preview:</label>
+<img src="" id="preview" class="seven" required>
+</fieldset> <br>
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/
+show_everything.php">
+
+<fieldset class="one">
+<legend>Your General Details</legend>
+<label for="name" class="eight">Name:</label>
+<input type="text" name="name" placeholder="Your full name" required>
+<br>
+<label for="gender" class="eight">Gender:</label>
+<input type="radio" name="gend" value="Male" class="ten" required>Male
+<input type="radio" name="gend" value="Female" required>Female
+<br>
+<label for="age" class="eight">Age:</label>
+<input type="number" name="age" value="18" required>
+<br>
+<label for="date of birth" class="eight">Date Of Birth:</label>
+<input type="date" name="bday">
+<br>
+<label for="Favourite color" class="eight">Favourite color:</label>
+<input type="color" name="color" required>
+<br>
+<label for="country" class="eight""three">Which Country:</label>
+<select name="country" required>
+    <option value="None selected"></option>
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="Albania">Albania</option>
+    <option value="Andorra">Andorra</option>
+	<option value="Angola">Angola</option>
+	<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+	<option value="Argentina">Argentina</option>
+	<option value="Bahamas">Bahamas</option>
+	<option value="Bangladesh">Bangladesh</option>
+	<option value="Belgium">Belgium</option>
+	<option value="China">China</option>
+	<option value="India">India</option>
+</select>
+</fieldset>
+
+<fieldset class="one">
+<legend>Your Indicators</legend>
+<label for="Height" class="eight">Height:</label>
+<span class="four">Short</span><input type="range" name="points" min="0" max="100" step="5" value="50" name="height" required><span class="five">Tall</span>
+<br>
+<label for="Salary" class="eight">Salary:</label>
+<span class="four">Poor</span><input type="range" name="points" min="0" max="100" step="5" value="50" name="salary" required><span class="five">Rich</span>
+<br>
+</fieldset>
+
+<fieldset class="one">
+<legend>Your Contact Information</legend>
+<label for="Email"class="eight">Email:</label>
+<input type="email" name="email" required>
+<br>
+<label for="Mobile" class="eight">Mobile:</label>
+<input type="text" pattern="[789][0-9]{9}" required>
+<br>
+<label for="Address"class="eight">Address:</label>
+ <textarea rows="3" cols="60" name="feedback" class="six"required >
+</textarea>
+<br>
+<label for="Method to contact you" class="eight""three">Method to contact you:</label>
+<input type="checkbox" name="c2" value="email">Email
+ <input type="checkbox" name="c2" value="whatsapp">Whatsapp
+ <input type="checkbox" name="c2" value="appchat">In appchat
+</fieldset>
+<input type="submit" value="Submit">
+</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+
+</body>
+</html>
